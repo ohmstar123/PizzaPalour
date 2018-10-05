@@ -78,10 +78,11 @@
             // 
             // outputLabel
             // 
+            this.outputLabel.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.outputLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.outputLabel.Location = new System.Drawing.Point(255, 376);
+            this.outputLabel.Location = new System.Drawing.Point(-3, 376);
             this.outputLabel.Name = "outputLabel";
-            this.outputLabel.Size = new System.Drawing.Size(305, 43);
+            this.outputLabel.Size = new System.Drawing.Size(804, 73);
             this.outputLabel.TabIndex = 4;
             this.outputLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -99,7 +100,7 @@
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Pizza Parlour";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -23,17 +23,29 @@ namespace PizzaPalour
         {
             InitializeComponent();
         }
-
+        
+    
+        
         private void calculateButton_Click(object sender, EventArgs e)
         {
-            //Take the toppings value from the input box and put it in the appropriate variable.
+            try
+            {
+                //Take the toppings value from the input box and put it in the appropriate variable.
+                topings = Convert.ToInt32(TopingsImput.Text);
 
+                /// Calculate the price of the pizza and put the result in the appropriate variable.
 
-		    // Calculate the price of the pizza and put the result in the appropriate variable.
+                /// (base price + toppings * number of toppings)
+                total = BASE + TOPING * topings;
 
-
-            //  Display the price from the variable to the screen, (see example below), formatted to 2 decimal places with dollar sign in front.
-
+                //  Display the price from the variable to the screen, (see example below), formatted to 2 decimal places with dollar sign in front.
+                outputLabel.Text = " The price of a pizza with " + topings + " topings is: " + "\n" + total.ToString("C");
+            }
+            catch
+            {
+                outputLabel.Text = "  please enter the number of topings";
+            }
         }
-    }
+       
+    } 
 }
